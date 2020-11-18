@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<title>TipCalc</title>
+</head>
+<body>
+<div class="calc-container">
+<header>
+<h1>Tip Calculator</h1>
+</header>
+<div class="body-inner">
+<section>
+    <br><label for="service"> How much was your bill?</label>
+    <p>$<input id="service" type="text" ></p>
+    <label for="amount" id="amount1"> How was your service?</label> <br>
+    <select id="amount" class="amount">
+        <option disabled selected value="0">-- Choose an Option --</option>
+        <option value="0.05">Bad (5% Tip)</option>
+        <option value="0.1">Good (10% Tip)</option>
+        <option value="0.15">Very Good (15% Tip)</option>
+        <option value="0.20">Excellent (20% Tip)</option>
+    </select><br>
+    <label for="numPeople">How many people are sharing the bill?</label>
+    <p><input id="numPeople" type="text"> people</p>
+    <input id="btn-inner" type="button" value="Calculate" onclick="getInputValue()">
+    <p id="final-result"></p>
+</section>
+</div>
+</div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
